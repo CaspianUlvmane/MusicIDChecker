@@ -12,7 +12,7 @@ const ContentChecker = () => {
     try {
       // Use Google OAuth to get the user's access token (handled separately)
       //   const accessToken = await getGoogleAccessToken();
-      const accessToken = "AIzaSyCpwk-E4iNE9cklY3MMKbeTUL-98zivgo8";
+      const accessToken = "";
       const formData = new FormData();
       formData.append("file", file);
 
