@@ -7,7 +7,7 @@ import {
   ScrollRestoration,
   Router,
   Routes,
-  Route
+  Route,
 } from "react-router";
 
 import type { Route } from "./+types/root";
@@ -40,12 +40,12 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
       </head>
       <body>
-        <Header/>
-          <Routes>
-            <Route path="/" Component={Home}/>
-            <Route path="video" Component={Video}/>
-            <Route path="about" Component={About}/>
-          </Routes>
+        <Header />
+        <Routes>
+          <Route path="/" Component={Home} />
+          <Route path="video" Component={Video} />
+          <Route path="about" Component={About} />
+        </Routes>
         <ScrollRestoration />
         <Scripts />
       </body>
@@ -54,7 +54,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
 }
 
 export default function App() {
-  return <Outlet />
+  return <Outlet />;
 }
 
 export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
